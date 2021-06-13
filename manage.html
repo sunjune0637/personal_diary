@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Write Post</title>
+  </head>
+
+  <body>
+    <style>
+        a{
+           text-decoration:none;
+         }
+        p{line-height: 30px;}
+        body{background-color: white;}
+        div{
+            background-color: white;
+            width: 90%;
+            padding: 15px;
+            border: 1px solid black;
+        }
+        
+    </style>
+    <table border="0" align="center">
+    
+    <tr>
+    
+      <td><font size=10><b>Posting</b></font></td>
+    </tr>
+    </table>
+    <br><br>
+
+    <div1>
+    <form action="/post_proc" method='POST' enctype="multipart/form-data">
+      <table border="0" align="center">
+      <tr>
+        <td colspan="5">
+          <label for="title">Write Title<br></label>
+        </td>
+      <tr>
+        <td colspan="5">
+          <textarea type="text" name="title" cols="80" rows="2" placeholder='Write Title...' style="overflow-y:scroll; overflow-x:hidden; resize: none;" required></textarea>
+        <br><br>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <label for="title">Write Contents<br></label>
+        </td>
+        <td><input type = "file" name = "file" accept="image/*" /></td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <textarea type="text" name="content" cols="80" rows="15" placeholder='Write Contents...' style="overflow-y:scroll; overflow-x:hidden; resize: none;" required></textarea><br>
+        </td>
+      </tr>
+      </table>
+      <table border="0" align="center">
+      <tr>
+        <td>
+         <input type="submit" value="Submit">
+        </td>
+        <td></td>
+        <td>
+          <a href="/"><input type="button" value="Cancel"></a>
+        </td>
+      </tr>
+      </table>   
+    </form>
+    </div1>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Diary</title>
+    <meta charset ="utf-8">
+    <style>
+
+            table th {
+                font-weight: normal; }
+
+            table td {
+                border-bottom:solid 1px #f8f8f8;
+            }
+
+            table > thead > tr > th,
+            table > tbody > tr > th,
+            table > tfoot > tr > th,
+            table > thead > tr > td,
+            table > tbody > tr > td,
+            table > tfoot > tr > td {
+                padding: 5px; 
+            }
+
+            table thead tr th {
+                font-size: 12px;
+                color: #121212;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 0.05em;
+                background: #aaaaaa;
+                text-align: left;
+            }
+
+      #container {
+        width: 840px;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid #000000;
+      }
+      #header {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #000000;
+      }
+      #content {
+        width: 530px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 1px solid #000000;
+      }
+      #sidebar {
+        width: 210px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: right;
+        border: 1px solid #000000;
+      }
+      #footer {
+        clear: both;
+        padding: 20px;
+        border: 1px solid #000000;
+                text-align: center;
+      }
+      @media ( max-width: 820px ) {
+        #container {
+          width: auto;
+        }
+        #content {
+          float: none;
+          width: auto;
+        }
+        #sidebar {
+          float: none;
+          width: auto;
+        }
+      }
+    </style>
+</head>
+<body>
+<h1>Welcome to Personal Dairy service</h1>
+<h3><a href="/register_page">Register to start service</a></h3>
+<h3><a href="/login_page">Login</a></h3>
+</body>
+</html>
